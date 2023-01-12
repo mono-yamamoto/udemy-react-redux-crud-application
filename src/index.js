@@ -11,10 +11,10 @@ import reportWebVitals from "./reportWebVitals";
 
 const store = createStore(reducer);
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById("root")
+  </Provider>
 );
 reportWebVitals();
